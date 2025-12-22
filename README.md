@@ -150,12 +150,12 @@ Le formulaire de contact actuel simule l'envoi. Pour une intégration réelle :
 ## 📞 Support
 
 Pour toute question ou suggestion concernant le site :
-- Email : contact@benichegdale.ma
-- Téléphone : +212 XXX XXX XXX
+- Email : leadernet001@gmail.com
+- Téléphone : +212 622725296
 
 ## 📄 Licence
 
-Ce projet est développé pour la Commune Rurale de Beni Chegdale.
+Ce projet est développé pour soufyane felate
 
 ## 👨‍💻 Développement
 
