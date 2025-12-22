@@ -168,6 +168,6 @@ Site développé avec :
 ---
 
 **Version** : 1.0  
-**Dernière mise à jour** : 2024  
-**Auteur** : Commune Rurale de Beni Chegdale
+**Dernière mise à jour** : 2025  
+**Auteur** :soufyane 
 
