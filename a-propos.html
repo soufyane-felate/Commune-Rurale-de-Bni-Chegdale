@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="À propos de la Commune rurale de Bni Chegdale - Présentation, mission et valeurs">
-    <title>À propos - Commune Rurale de Bni Chegdale</title>
-    
+    <title>من نحن - الجماعة القروية بني شكدال</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="about">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
         <div class="container">
@@ -78,7 +80,7 @@
                     <div class="card shadow-lg border-0">
                         <div class="card-body p-4">
                             <h3 class="text-primary mb-4">
-                                <i class="bi bi-geo-alt-fill me-2"></i>Informations Géographiques
+                                <i class="bi bi-geo-alt-fill me-2"></i><span data-translate="aboutGeoInfo">Informations Géographiques</span>
                             </h3>
                             <ul class="list-unstyled">
                                 <li class="mb-3">
@@ -109,8 +111,8 @@
     <section class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3">Mission et Rôles de la Commune</h2>
-                <p class="lead text-muted">Nos responsabilités et engagements envers les citoyens</p>
+                <h2 class="display-5 fw-bold text-primary mb-3" data-translate="aboutMissionTitle">Mission et Rôles de la Commune</h2>
+                <p class="lead text-muted" data-translate="aboutMissionSubtitle">Nos responsabilités et engagements envers les citoyens</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
@@ -119,8 +121,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-briefcase-fill text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Services Administratifs</h4>
-                            <p class="card-text">Fournir des services administratifs efficaces et accessibles à tous les citoyens, en simplifiant les démarches et en réduisant les délais.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutServiceAdmin">Services Administratifs</h4>
+                            <p class="card-text" data-translate="aboutServiceAdminText">Fournir des services administratifs efficaces et accessibles à tous les citoyens, en simplifiant les démarches et en réduisant les délais.</p>
                         </div>
                     </div>
                 </div>
@@ -130,8 +132,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-graph-up-arrow text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Développement Local</h4>
-                            <p class="card-text">Promouvoir le développement économique et social du territoire en soutenant les initiatives locales et en créant un environnement favorable aux investissements.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutDevLocal">Développement Local</h4>
+                            <p class="card-text" data-translate="aboutDevLocalText">Promouvoir le développement économique et social du territoire en soutenant les initiatives locales et en créant un environnement favorable aux investissements.</p>
                         </div>
                     </div>
                 </div>
@@ -141,8 +143,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-people-fill text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Proximité Citoyenne</h4>
-                            <p class="card-text">Maintenir une relation de proximité avec les citoyens, être à l'écoute de leurs besoins et améliorer continuellement la qualité de vie locale.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutProximity">Proximité Citoyenne</h4>
+                            <p class="card-text" data-translate="aboutProximityText">Maintenir une relation de proximité avec les citoyens, être à l'écoute de leurs besoins et améliorer continuellement la qualité de vie locale.</p>
                         </div>
                     </div>
                 </div>
@@ -152,8 +154,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-shield-check text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Transparence</h4>
-                            <p class="card-text">Assurer la transparence dans la gestion des affaires publiques et l'information des citoyens sur les décisions et projets communaux.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutTransparency">Transparence</h4>
+                            <p class="card-text" data-translate="aboutTransparencyText">Assurer la transparence dans la gestion des affaires publiques et l'information des citoyens sur les décisions et projets communaux.</p>
                         </div>
                     </div>
                 </div>
@@ -163,8 +165,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-tree-fill text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Environnement</h4>
-                            <p class="card-text">Protéger l'environnement et promouvoir le développement durable à travers des projets écologiques et des initiatives vertes.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutEnvironment">Environnement</h4>
+                            <p class="card-text" data-translate="aboutEnvironmentText">Protéger l'environnement et promouvoir le développement durable à travers des projets écologiques et des initiatives vertes.</p>
                         </div>
                     </div>
                 </div>
@@ -174,8 +176,8 @@
                             <div class="mb-3">
                                 <i class="bi bi-heart-fill text-primary fs-1"></i>
                             </div>
-                            <h4 class="card-title text-primary">Solidarité</h4>
-                            <p class="card-text">Renforcer la cohésion sociale et la solidarité entre les citoyens, en particulier envers les personnes vulnérables et les familles en difficulté.</p>
+                            <h4 class="card-title text-primary" data-translate="aboutSolidarity">Solidarité</h4>
+                            <p class="card-text" data-translate="aboutSolidarityText">Renforcer la cohésion sociale et la solidarité entre les citoyens, en particulier envers les personnes vulnérables et les familles en difficulté.</p>
                         </div>
                     </div>
                 </div>
@@ -189,8 +191,8 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="text-center mb-5">
-                        <h2 class="display-5 fw-bold text-primary mb-3">Nos Valeurs</h2>
-                        <p class="lead text-muted">Les principes qui guident notre action quotidienne</p>
+                        <h2 class="display-5 fw-bold text-primary mb-3" data-translate="aboutValuesTitle">Nos Valeurs</h2>
+                        <p class="lead text-muted" data-translate="aboutValuesSubtitle">Les principes qui guident notre action quotidienne</p>
                     </div>
                     <div class="row g-4">
                         <div class="col-md-6">
@@ -199,8 +201,8 @@
                                     <i class="bi bi-check-circle-fill text-success fs-3"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h5>Intégrité</h5>
-                                    <p class="text-muted mb-0">Agir avec honnêteté et éthique dans toutes nos actions.</p>
+                                    <h5 data-translate="aboutIntegrity">Intégrité</h5>
+                                    <p class="text-muted mb-0" data-translate="aboutIntegrityText">Agir avec honnêteté et éthique dans toutes nos actions.</p>
                                 </div>
                             </div>
                         </div>
@@ -210,8 +212,8 @@
                                     <i class="bi bi-check-circle-fill text-success fs-3"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h5>Efficacité</h5>
-                                    <p class="text-muted mb-0">Optimiser nos processus pour un service de qualité.</p>
+                                    <h5 data-translate="aboutEfficiency">Efficacité</h5>
+                                    <p class="text-muted mb-0" data-translate="aboutEfficiencyText">Optimiser nos processus pour un service de qualité.</p>
                                 </div>
                             </div>
                         </div>
@@ -221,8 +223,8 @@
                                     <i class="bi bi-check-circle-fill text-success fs-3"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h5>Accessibilité</h5>
-                                    <p class="text-muted mb-0">Rendre nos services accessibles à tous les citoyens.</p>
+                                    <h5 data-translate="aboutAccessibility">Accessibilité</h5>
+                                    <p class="text-muted mb-0" data-translate="aboutAccessibilityText">Rendre nos services accessibles à tous les citoyens.</p>
                                 </div>
                             </div>
                         </div>
@@ -232,8 +234,8 @@
                                     <i class="bi bi-check-circle-fill text-success fs-3"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h5>Innovation</h5>
-                                    <p class="text-muted mb-0">Adopter les meilleures pratiques et technologies.</p>
+                                    <h5 data-translate="aboutInnovation">Innovation</h5>
+                                    <p class="text-muted mb-0" data-translate="aboutInnovationText">Adopter les meilleures pratiques et technologies.</p>
                                 </div>
                             </div>
                         </div>
@@ -249,21 +251,21 @@
             <div class="row g-4">
                 <div class="col-lg-4">
                     <h5 class="mb-3">
-                        <i class="bi bi-building me-2"></i>Commune Rurale de Beni Chegdale
+                        <i class="bi bi-building me-2"></i><span data-translate="footerTitle">Commune Rurale de Beni Chegdale</span>
                     </h5>
-                    <p>Au service des citoyens pour un développement local durable et une meilleure qualité de vie.</p>
+                    <p data-translate="footerTagline">Au service des citoyens pour un développement local durable et une meilleure qualité de vie.</p>
                 </div>
                 <div class="col-lg-4">
-                    <h5 class="mb-3">Liens Rapides</h5>
+                    <h5 class="mb-3" data-translate="footerQuickLinks">Liens Rapides</h5>
                     <ul class="list-unstyled">
-                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none">À propos</a></li>
-                        <li><a href="services.html" class="text-white-50 text-decoration-none">Services</a></li>
-                        <li><a href="horaires.html" class="text-white-50 text-decoration-none">Horaires</a></li>
-                        <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+                        <li><a href="a-propos.html" class="text-white-50 text-decoration-none" data-translate="navAbout">À propos</a></li>
+                        <li><a href="services.html" class="text-white-50 text-decoration-none" data-translate="navServices">Services</a></li>
+                        <li><a href="horaires.html" class="text-white-50 text-decoration-none" data-translate="navHours">Horaires</a></li>
+                        <li><a href="contact.html" class="text-white-50 text-decoration-none" data-translate="navContact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h5 class="mb-3">Contact</h5>
+                    <h5 class="mb-3" data-translate="footerContact">Contact</h5>
                     <p class="mb-2">
                         <i class="bi bi-geo-alt me-2"></i>Commune Rurale de Beni Chegdale<br>
                         <span class="ms-4">Maroc</span>
@@ -282,7 +284,7 @@
                     <p class="mb-0 text-white-50">&copy; 2025 <span data-translate="footerTitle">Commune Rurale de Bni Chegdale</span>. <span data-translate="footerRights">Tous droits réservés.</span></p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-white-50">Conçu avec <i class="bi bi-heart-fill text-danger"></i> pour les citoyens</p>
+                    <p class="mb-0 text-white-50"><span data-translate="footerDesigned">Conçu avec</span> <i class="bi bi-heart-fill text-danger"></i> <span data-translate="footerFor">pour les citoyens</span></p>
                 </div>
             </div>
         </div>
@@ -292,6 +294,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Language Support -->
     <script src="assets/js/language.js"></script>
+    <script src="assets/js/i18n-bindings.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>

@@ -108,15 +108,35 @@ bnichegdal site/
 
 ## 🔧 Installation et Utilisation
 
-1. **Télécharger les fichiers** du projet
-2. **Ouvrir `index.html`** dans un navigateur web
-3. Le site fonctionne sans serveur (fichiers statiques)
+### Mode avec base de données (recommandé pour l'hébergement)
 
-### Pour le développement :
+1. Installer [Node.js](https://nodejs.org/) 18+
+2. Copier `.env.example` vers `.env` et modifier les secrets :
+   ```bash
+   copy .env.example .env
+   ```
+3. Installer les dépendances et lancer le serveur :
+   ```bash
+   npm install
+   npm start
+   ```
+4. Ouvrir **http://localhost:3000**
+5. Administration : **http://localhost:3000/admin.html**  
+   Mot de passe par défaut : `bnichegdale2025` (à changer dans `.env` ou depuis l'admin)
 
-- Ouvrir les fichiers dans un éditeur de code
-- Modifier les fichiers HTML, CSS ou JS selon vos besoins
-- Recharger la page dans le navigateur pour voir les changements
+**Fichiers créés automatiquement :**
+- `data/commune.db` — base SQLite (publications, paramètres admin)
+- `uploads/` — photos et PDF des publications
+
+### Mode statique (sans serveur)
+
+Ouvrir `index.html` dans le navigateur : les publications restent dans `localStorage` du navigateur.
+
+### Développement
+
+```bash
+npm run dev
+```
 
 ## 📝 Personnalisation
 
@@ -139,13 +159,33 @@ bnichegdal site/
 2. Copier la structure de navigation depuis une page existante
 3. Ajouter le lien dans la navigation de toutes les pages
 
-## 🌐 Intégration avec un Backend
+## 🗄️ Base de données et API
 
-Le formulaire de contact actuel simule l'envoi. Pour une intégration réelle :
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/health` | État du serveur |
+| `GET /api/posts` | Liste des publications |
+| `POST /api/posts` | Créer (token admin) |
+| `DELETE /api/posts/:id` | Supprimer (token admin) |
+| `POST /api/auth/login` | Connexion admin → JWT |
+| `PUT /api/auth/password` | Changer mot de passe admin |
 
-1. Créer un endpoint API pour recevoir les données
-2. Modifier la fonction de soumission dans `assets/js/main.js`
-3. Ajouter la gestion des erreurs et la validation côté serveur
+### Hébergement (VPS, Railway, Render, etc.)
+
+1. Déployer le projet avec `npm start`
+2. Définir les variables : `PORT`, `JWT_SECRET`, `ADMIN_PASSWORD`
+3. Sauvegarder régulièrement `data/commune.db` et le dossier `uploads/`
+4. Pour **MySQL/PostgreSQL** plus tard : remplacer `better-sqlite3` par un driver adapté (même schéma dans `server/schema.sql`)
+
+### Migrer les anciennes publications (localStorage)
+
+1. Dans le navigateur (console) : `copy(localStorage.getItem('commune_posts'))`
+2. Coller dans un fichier `posts.json`
+3. `node server/scripts/migrate-local.js posts.json`
+
+## 🌐 Formulaire de contact
+
+Le formulaire simule encore l'envoi côté client. Pour un envoi réel par email, ajouter un endpoint API dédié.
 
 ## 📞 Support
 

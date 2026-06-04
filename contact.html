@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactez la Commune rurale de Bni Chegdale - Adresse, téléphone, email et formulaire de contact">
-    <title>Contact - Commune Rurale de Bni Chegdale</title>
-    
+    <title>اتصل بنا - الجماعة القروية بني شكدال</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="contact">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
         <div class="container">
@@ -57,8 +59,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-3">Contactez-nous</h1>
-                    <p class="lead">Nous sommes à votre écoute pour répondre à vos questions</p>
+                    <h1 class="display-4 fw-bold mb-3" data-translate="contactTitle">اتصل بنا</h1>
+                    <p class="lead" data-translate="contactSubtitle">نحن في خدمتكم للرد على استفساراتكم</p>
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@
                             <div class="mb-3">
                                 <i class="bi bi-geo-alt-fill text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Adresse</h5>
+                            <h5 class="card-title text-primary mb-3" data-translate="contactAddress">العنوان</h5>
                             <p class="card-text">
                                 Commune Rurale de Bni Chegdale<br>
                                 Hôtel de Ville<br>
@@ -95,7 +97,7 @@
                             <div class="mb-3">
                                 <i class="bi bi-telephone-fill text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Téléphone</h5>
+                            <h5 class="card-title text-primary mb-3" data-translate="contactPhone">الهاتف</h5>
                             <p class="card-text">
                                 <strong>Standard :</strong><br>
                                 <a href="tel:+212XXXXXXXXX" class="text-decoration-none">+212 XXX XXX XXX</a><br><br>
@@ -111,7 +113,7 @@
                             <div class="mb-3">
                                 <i class="bi bi-envelope-fill text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Email</h5>
+                            <h5 class="card-title text-primary mb-3" data-translate="contactEmail">البريد الإلكتروني</h5>
                             <p class="card-text">
                                 <strong>Général :</strong><br>
                                 <a href="mailto:contact@benichegdale.ma" class="text-decoration-none">contact@benichegdale.ma</a><br><br>
@@ -133,49 +135,49 @@
                     <div class="card shadow-lg border-0">
                         <div class="card-header bg-primary text-white">
                             <h3 class="mb-0">
-                                <i class="bi bi-envelope-paper me-2"></i>Formulaire de Contact
+                                <i class="bi bi-envelope-paper me-2"></i><span data-translate="contactFormTitle">نموذج الاتصال</span>
                             </h3>
                         </div>
                         <div class="card-body p-4">
                             <form id="contactForm" novalidate>
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="nom" class="form-label">Nom complet <span class="text-danger">*</span></label>
+                                        <label for="nom" class="form-label"><span data-translate="contactName">Nom complet</span> <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="nom" name="nom" required>
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback" data-translate="contactErrName">
                                             Veuillez entrer votre nom.
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <label for="email" class="form-label"><span data-translate="contactEmailField">Email</span> <span class="text-danger">*</span></label>
                                         <input type="email" class="form-control" id="email" name="email" required>
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback" data-translate="contactErrEmail">
                                             Veuillez entrer une adresse email valide.
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="telephone" class="form-label">Téléphone</label>
+                                        <label for="telephone" class="form-label" data-translate="contactPhoneField">Téléphone</label>
                                         <input type="tel" class="form-control" id="telephone" name="telephone">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="sujet" class="form-label">Sujet <span class="text-danger">*</span></label>
+                                        <label for="sujet" class="form-label"><span data-translate="contactSubject">Sujet</span> <span class="text-danger">*</span></label>
                                         <select class="form-select" id="sujet" name="sujet" required>
-                                            <option value="">Sélectionnez un sujet</option>
-                                            <option value="etat-civil">État Civil</option>
-                                            <option value="urbanisme">Urbanisme</option>
-                                            <option value="impots">Impôts et Taxes</option>
-                                            <option value="social">Affaires Sociales</option>
-                                            <option value="administration">Administration</option>
-                                            <option value="autre">Autre</option>
+                                            <option value="" data-translate="contactSubjectSelect">Sélectionnez un sujet</option>
+                                            <option value="etat-civil" data-translate="serviceCivil">État Civil</option>
+                                            <option value="urbanisme" data-translate="serviceUrban">Urbanisme</option>
+                                            <option value="impots" data-translate="serviceTaxes">Impôts et Taxes</option>
+                                            <option value="social" data-translate="serviceSocial">Affaires Sociales</option>
+                                            <option value="administration" data-translate="navAdmin">Administration</option>
+                                            <option value="autre" data-translate="contactSubjectOther">Autre</option>
                                         </select>
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback" data-translate="contactErrSubject">
                                             Veuillez sélectionner un sujet.
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
                                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                                        <div class="invalid-feedback">
+                                        <div class="invalid-feedback" data-translate="contactErrMessage">
                                             Veuillez entrer votre message.
                                         </div>
                                     </div>
@@ -183,25 +185,25 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="consentement" required>
                                             <label class="form-check-label" for="consentement">
-                                                J'accepte que mes données soient utilisées pour répondre à ma demande <span class="text-danger">*</span>
+                                                <span data-translate="contactConsent">J'accepte que mes données soient utilisées pour répondre à ma demande</span> <span class="text-danger">*</span>
                                             </label>
-                                            <div class="invalid-feedback">
+                                            <div class="invalid-feedback" data-translate="contactErrConsent">
                                                 Vous devez accepter pour continuer.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary btn-lg">
-                                            <i class="bi bi-send me-2"></i>Envoyer le message
+                                            <i class="bi bi-send me-2"></i><span data-translate="contactSend">Envoyer le message</span>
                                         </button>
                                     </div>
                                 </div>
                             </form>
                             <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
-                                <i class="bi bi-check-circle me-2"></i>Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.
+                                <i class="bi bi-check-circle me-2"></i><span data-translate="contactSuccess">Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.</span>
                             </div>
                             <div id="formError" class="alert alert-danger mt-3 d-none" role="alert">
-                                <i class="bi bi-exclamation-triangle me-2"></i>Une erreur s'est produite. Veuillez réessayer plus tard.
+                                <i class="bi bi-exclamation-triangle me-2"></i><span data-translate="contactError">Une erreur s'est produite. Veuillez réessayer plus tard.</span>
                             </div>
                         </div>
                     </div>
@@ -214,8 +216,8 @@
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary mb-3">Contact par Service</h2>
-                <p class="lead text-muted">Contactez directement le service dont vous avez besoin</p>
+                <h2 class="display-5 fw-bold text-primary mb-3" data-translate="contactByService">الاتصال حسب الخدمة</h2>
+                <p class="lead text-muted" data-translate="contactSubtitle">نحن في خدمتكم للرد على استفساراتكم</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
@@ -378,6 +380,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Language Support -->
     <script src="assets/js/language.js"></script>
+    <script src="assets/js/i18n-bindings.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>

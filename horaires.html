@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Horaires et jours de travail de la Commune rurale de Bni Chegdale">
-    <title>Horaires - Commune Rurale de Bni Chegdale</title>
-    
+    <title>أوقات العمل - الجماعة القروية بني شكدال</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="hours">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
         <div class="container">
@@ -80,9 +82,9 @@
                                 <table class="table table-hover">
                                     <thead class="table-light">
                                         <tr>
-                                            <th><i class="bi bi-calendar-week me-2"></i>Jour</th>
-                                            <th class="text-center"><i class="bi bi-clock me-2"></i>Horaires</th>
-                                            <th class="text-center">Statut</th>
+                                            <th><i class="bi bi-calendar-week me-2"></i><span data-translate="hoursDay">Jour</span></th>
+                                            <th class="text-center"><i class="bi bi-clock me-2"></i><span data-translate="hoursSchedule">Horaires</span></th>
+                                            <th class="text-center" data-translate="hoursStatus">Statut</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -109,7 +111,7 @@
                                         <tr>
                                             <td><strong data-translate="hoursFriday">Vendredi</strong></td>
                                             <td class="text-center">08:30 - 12:00</td>
-                                            <td class="text-center"><span class="badge bg-warning">Demi-journée</span></td>
+                                            <td class="text-center"><span class="badge bg-warning" data-translate="hoursHalfDay">Demi-journée</span></td>
                                         </tr>
                                         <tr class="table-secondary">
                                             <td><strong data-translate="hoursSaturday">Samedi</strong></td>
@@ -126,7 +128,8 @@
                             </div>
                             <div class="alert alert-info mt-4 mb-0">
                                 <i class="bi bi-info-circle me-2"></i>
-                                <strong>Note :</strong> La pause déjeuner se déroule généralement de 12:00 à 14:00. Certains services peuvent avoir des horaires spécifiques.
+                                <strong data-translate="hoursNoteLabel">Note :</strong>
+                                <span data-translate="hoursNoteText"> La pause déjeuner se déroule généralement de 12:00 à 14:00. Certains services peuvent avoir des horaires spécifiques.</span>
                             </div>
                         </div>
                     </div>
@@ -140,7 +143,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold text-primary mb-3 fade-in-on-scroll" data-translate="hoursByService">Horaires par Service</h2>
-                <p class="lead text-muted fade-in-on-scroll">Horaires spécifiques pour chaque service communal</p>
+                <p class="lead text-muted fade-in-on-scroll" data-translate="hoursByServiceDesc">Horaires spécifiques pour chaque service communal</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
@@ -149,7 +152,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-file-earmark-text text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">État Civil</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="serviceCivil">État Civil</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 08:30 - 16:30</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 08:30 - 12:00</li>
@@ -164,7 +167,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-house-door text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">Urbanisme</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="serviceUrban">Urbanisme</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 09:00 - 16:00</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 09:00 - 12:00</li>
@@ -179,7 +182,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-receipt text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">Finances</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="serviceFinance">Finances</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 08:30 - 16:00</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 08:30 - 12:00</li>
@@ -194,7 +197,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-people text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">Affaires Sociales</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="serviceSocial">Affaires Sociales</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 09:00 - 15:30</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 09:00 - 12:00</li>
@@ -209,7 +212,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-telephone text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">Accueil Général</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="hoursReception">Accueil Général</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 08:30 - 16:30</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 08:30 - 12:00</li>
@@ -224,7 +227,7 @@
                             <div class="text-center mb-3">
                                 <i class="bi bi-person-badge text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary text-center mb-3">Secrétariat</h5>
+                            <h5 class="card-title text-primary text-center mb-3" data-translate="hoursSecretariat">Secrétariat</h5>
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Lundi - Jeudi :</strong> 08:30 - 16:30</li>
                                 <li class="mb-2"><strong>Vendredi :</strong> 08:30 - 12:00</li>
@@ -245,11 +248,11 @@
                     <div class="card shadow-lg border-0">
                         <div class="card-header bg-danger text-white">
                             <h3 class="mb-0">
-                                <i class="bi bi-calendar-x me-2"></i>Jours Fériés et Fermetures Exceptionnelles
+                                <i class="bi bi-calendar-x me-2"></i><span data-translate="hoursHolidaysTitle">Jours Fériés et Fermetures Exceptionnelles</span>
                             </h3>
                         </div>
                         <div class="card-body p-4">
-                            <p class="lead mb-4">La commune est fermée les jours fériés suivants :</p>
+                            <p class="lead mb-4" data-translate="hoursHolidaysLead">La commune est fermée les jours fériés suivants :</p>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
@@ -286,10 +289,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-5 fw-bold mb-3">Besoin de plus d'informations ?</h2>
-                    <p class="lead mb-4">N'hésitez pas à nous contacter pour toute question concernant nos horaires</p>
+                    <h2 class="display-5 fw-bold mb-3" data-translate="ctaMoreInfo">Besoin de plus d'informations ?</h2>
+                    <p class="lead mb-4" data-translate="ctaMoreInfoDesc">N'hésitez pas à nous contacter pour toute question concernant nos horaires</p>
                     <a href="contact.html" class="btn btn-light btn-lg">
-                        <i class="bi bi-envelope me-2"></i>Nous Contacter
+                        <i class="bi bi-envelope me-2"></i><span data-translate="btnContact">Nous Contacter</span>
                     </a>
                 </div>
             </div>
@@ -345,6 +348,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Language Support -->
     <script src="assets/js/language.js"></script>
+    <script src="assets/js/i18n-bindings.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>

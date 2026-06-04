@@ -1,6 +1,6 @@
 /**
- * Multi-language Support for Commune Rurale de Beni Chegdale
- * Languages: French (fr), Arabic (ar), English (en)
+ * Multi-language Support for Commune Rurale de Bni Chegdale
+ * Languages: Arabic (ar, official), French (fr), English (en)
  */
 
 const translations = {
@@ -168,7 +168,74 @@ const translations = {
         contactSuccess: "Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
         contactError: "Une erreur s'est produite. Veuillez réessayer plus tard.",
         contactByService: "Contact par Service",
-        contactLocation: "Localisation"
+        contactLocation: "Localisation",
+        langName: "Français",
+        geoPopulation: "Population",
+        geoInhabitants: "habitants (2014)",
+        geoHouseholds: "ménages",
+        geoLocationTitle: "Localisation",
+        geoAltitude: "Altitude moyenne :",
+        geoProvince: "Province :",
+        geoRegion: "Région :",
+        geoDistanceTitle: "Distances",
+        geoNeighborhoods: "Quartiers et Villages",
+        geoAdminCenter: "Centre administratif",
+        newsletterTitle: "Restez informé",
+        newsletterSubtitle: "Recevez les dernières actualités de la commune directement par email",
+        newsletterPlaceholder: "Votre adresse email",
+        newsletterBtn: "S'abonner",
+        newsletterPrivacy: "Nous respectons votre vie privée. Vous pouvez vous désabonner à tout moment.",
+        noPosts: "Aucune publication pour le moment.",
+        downloadPdf: "Télécharger le PDF",
+        catImportant: "Important",
+        catProject: "Projet",
+        catAnnouncement: "Annonce",
+        catNotice: "Avis",
+        catEvent: "Événement",
+        catInfo: "Information",
+        pageTitle_home: "Commune Rurale de Bni Chegdale - Accueil",
+        pageTitle_about: "À propos - Commune Rurale de Bni Chegdale",
+        pageTitle_services: "Services - Commune Rurale de Bni Chegdale",
+        pageTitle_hours: "Horaires - Commune Rurale de Bni Chegdale",
+        pageTitle_admin: "Administration - Commune Rurale de Bni Chegdale",
+        pageTitle_news: "Actualités - Commune Rurale de Bni Chegdale",
+        pageTitle_contact: "Contact - Commune Rurale de Bni Chegdale",
+        pageTitle_adminPanel: "Espace Admin - Commune Rurale de Bni Chegdale",
+        hoursDay: "Jour",
+        hoursSchedule: "Horaires",
+        hoursStatus: "Statut",
+        hoursOpen: "Ouvert",
+        hoursHalfDay: "Demi-journée",
+        hoursNoteLabel: "Note :",
+        hoursNoteText: "La pause déjeuner se déroule généralement de 12:00 à 14:00. Certains services peuvent avoir des horaires spécifiques.",
+        hoursByServiceDesc: "Horaires spécifiques pour chaque service communal",
+        serviceFinance: "Finances",
+        hoursReception: "Accueil Général",
+        hoursSecretariat: "Secrétariat",
+        hoursHolidaysTitle: "Jours Fériés et Fermetures Exceptionnelles",
+        hoursHolidaysLead: "La commune est fermée les jours fériés suivants :",
+        ctaNeedHelp: "Besoin d'aide ?",
+        ctaNeedHelpDesc: "Notre équipe est à votre disposition pour répondre à toutes vos questions",
+        ctaMoreInfo: "Besoin de plus d'informations ?",
+        ctaMoreInfoDesc: "N'hésitez pas à nous contacter pour toute question concernant nos horaires",
+        adminStructureDesc: "Organisation des services et départements",
+        adminCouncilDesc: "Représentation démocratique des citoyens",
+        adminTeamDesc: "Les responsables des différents services",
+        contactSubjectSelect: "Sélectionnez un sujet",
+        contactSubjectOther: "Autre",
+        contactConsent: "J'accepte que mes données soient utilisées pour répondre à ma demande",
+        contactErrName: "Veuillez entrer votre nom.",
+        contactErrEmail: "Veuillez entrer une adresse email valide.",
+        contactErrSubject: "Veuillez sélectionner un sujet.",
+        contactErrMessage: "Veuillez entrer votre message.",
+        contactErrConsent: "Vous devez accepter pour continuer.",
+        footerTagline: "Au service des citoyens pour un développement local durable et une meilleure qualité de vie.",
+        footerDesignedLine: "Conçu avec amour pour les citoyens",
+        serviceTaxesTitleLong: "Impôts et Taxes Locales",
+        serviceTaxesLead: "Gestion des impôts communaux et redevances",
+        serviceTaxesInfo: "Informations",
+        brandCommune: "Commune Rurale",
+        brandSub: "Bni Chegdale"
     },
     
     ar: {
@@ -335,7 +402,74 @@ const translations = {
         contactSuccess: "تم إرسال رسالتك بنجاح! سنرد عليك في أقرب وقت ممكن.",
         contactError: "حدث خطأ. يرجى المحاولة مرة أخرى لاحقاً.",
         contactByService: "الاتصال حسب الخدمة",
-        contactLocation: "الموقع"
+        contactLocation: "الموقع",
+        langName: "العربية",
+        geoPopulation: "السكان",
+        geoInhabitants: "نسمة (2014)",
+        geoHouseholds: "أسرة",
+        geoLocationTitle: "الموقع",
+        geoAltitude: "الارتفاع المتوسط:",
+        geoProvince: "الإقليم:",
+        geoRegion: "الجهة:",
+        geoDistanceTitle: "المسافات",
+        geoNeighborhoods: "الأحياء والقرى",
+        geoAdminCenter: "المركز الإداري",
+        newsletterTitle: "ابق على اطلاع",
+        newsletterSubtitle: "تلقَّ آخر أخبار الجماعة مباشرة عبر البريد الإلكتروني",
+        newsletterPlaceholder: "بريدك الإلكتروني",
+        newsletterBtn: "اشتراك",
+        newsletterPrivacy: "نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت.",
+        noPosts: "لا توجد منشورات حالياً.",
+        downloadPdf: "تحميل PDF",
+        catImportant: "مهم",
+        catProject: "مشروع",
+        catAnnouncement: "إعلان",
+        catNotice: "تنبيه",
+        catEvent: "حدث",
+        catInfo: "معلومة",
+        pageTitle_home: "الجماعة القروية بني شكدال - الرئيسية",
+        pageTitle_about: "من نحن - الجماعة القروية بني شكدال",
+        pageTitle_services: "الخدمات - الجماعة القروية بني شكدال",
+        pageTitle_hours: "أوقات العمل - الجماعة القروية بني شكدال",
+        pageTitle_admin: "الإدارة - الجماعة القروية بني شكدال",
+        pageTitle_news: "الأخبار - الجماعة القروية بني شكدال",
+        pageTitle_contact: "اتصل بنا - الجماعة القروية بني شكدال",
+        pageTitle_adminPanel: "لوحة الإدارة - الجماعة القروية بني شكدال",
+        hoursDay: "اليوم",
+        hoursSchedule: "الأوقات",
+        hoursStatus: "الحالة",
+        hoursOpen: "مفتوح",
+        hoursHalfDay: "نصف يوم",
+        hoursNoteLabel: "ملاحظة:",
+        hoursNoteText: "استراحة الغداء عادة من 12:00 إلى 14:00. قد تختلف أوقات بعض المصالح.",
+        hoursByServiceDesc: "أوقات خاصة بكل مصلحة جماعية",
+        serviceFinance: "المالية",
+        hoursReception: "الاستقبال العام",
+        hoursSecretariat: "الكتابة العامة",
+        hoursHolidaysTitle: "أيام العطل والأعياد",
+        hoursHolidaysLead: "تغلق الجماعة في الأيام التالية:",
+        ctaNeedHelp: "تحتاج مساعدة؟",
+        ctaNeedHelpDesc: "فريقنا رهن إشارتكم للإجابة على جميع استفساراتكم",
+        ctaMoreInfo: "تحتاج مزيداً من المعلومات؟",
+        ctaMoreInfoDesc: "لا تترددوا في الاتصال بنا بخصوص أوقات العمل",
+        adminStructureDesc: "تنظيم المصالح والأقسام",
+        adminCouncilDesc: "تمثيل ديمقراطي للمواطنين",
+        adminTeamDesc: "مسؤولو المصالح المختلفة",
+        contactSubjectSelect: "اختر الموضوع",
+        contactSubjectOther: "أخرى",
+        contactConsent: "أوافق على استخدام بياناتي للرد على طلبي",
+        contactErrName: "يرجى إدخال اسمكم.",
+        contactErrEmail: "يرجى إدخال بريد إلكتروني صالح.",
+        contactErrSubject: "يرجى اختيار الموضوع.",
+        contactErrMessage: "يرجى إدخال الرسالة.",
+        contactErrConsent: "يجب الموافقة للمتابعة.",
+        footerTagline: "في خدمة المواطنين من أجل تنمية محلية مستدامة وجودة حياة أفضل.",
+        footerDesignedLine: "صُمم بحب للمواطنين",
+        serviceTaxesTitleLong: "الضرائب والرسوم المحلية",
+        serviceTaxesLead: "إدارة الضرائب والرسوم الجماعية",
+        serviceTaxesInfo: "معلومات",
+        brandCommune: "الجماعة القروية",
+        brandSub: "بني شكدال"
     },
     
     en: {
@@ -502,14 +636,90 @@ const translations = {
         contactSuccess: "Your message has been sent successfully! We will respond as soon as possible.",
         contactError: "An error occurred. Please try again later.",
         contactByService: "Contact by Service",
-        contactLocation: "Location"
+        contactLocation: "Location",
+        langName: "English",
+        geoPopulation: "Population",
+        geoInhabitants: "inhabitants (2014)",
+        geoHouseholds: "households",
+        geoLocationTitle: "Location",
+        geoAltitude: "Average altitude:",
+        geoProvince: "Province:",
+        geoRegion: "Region:",
+        geoDistanceTitle: "Distances",
+        geoNeighborhoods: "Neighborhoods and Villages",
+        geoAdminCenter: "Administrative center",
+        newsletterTitle: "Stay informed",
+        newsletterSubtitle: "Receive the latest commune news directly by email",
+        newsletterPlaceholder: "Your email address",
+        newsletterBtn: "Subscribe",
+        newsletterPrivacy: "We respect your privacy. You can unsubscribe at any time.",
+        noPosts: "No posts yet.",
+        downloadPdf: "Download PDF",
+        catImportant: "Important",
+        catProject: "Project",
+        catAnnouncement: "Announcement",
+        catNotice: "Notice",
+        catEvent: "Event",
+        catInfo: "Information",
+        pageTitle_home: "Rural Commune of Bni Chegdale - Home",
+        pageTitle_about: "About - Rural Commune of Bni Chegdale",
+        pageTitle_services: "Services - Rural Commune of Bni Chegdale",
+        pageTitle_hours: "Hours - Rural Commune of Bni Chegdale",
+        pageTitle_admin: "Administration - Rural Commune of Bni Chegdale",
+        pageTitle_news: "News - Rural Commune of Bni Chegdale",
+        pageTitle_contact: "Contact - Rural Commune of Bni Chegdale",
+        pageTitle_adminPanel: "Admin Panel - Rural Commune of Bni Chegdale",
+        hoursDay: "Day",
+        hoursSchedule: "Hours",
+        hoursStatus: "Status",
+        hoursOpen: "Open",
+        hoursHalfDay: "Half day",
+        hoursNoteLabel: "Note:",
+        hoursNoteText: "Lunch break is usually from 12:00 to 14:00. Some services may have specific hours.",
+        hoursByServiceDesc: "Specific hours for each municipal service",
+        serviceFinance: "Finance",
+        hoursReception: "General Reception",
+        hoursSecretariat: "Secretariat",
+        hoursHolidaysTitle: "Public Holidays and Exceptional Closures",
+        hoursHolidaysLead: "The commune is closed on the following holidays:",
+        ctaNeedHelp: "Need help?",
+        ctaNeedHelpDesc: "Our team is available to answer all your questions",
+        ctaMoreInfo: "Need more information?",
+        ctaMoreInfoDesc: "Feel free to contact us with any questions about our hours",
+        adminStructureDesc: "Organization of services and departments",
+        adminCouncilDesc: "Democratic representation of citizens",
+        adminTeamDesc: "Heads of the various services",
+        contactSubjectSelect: "Select a subject",
+        contactSubjectOther: "Other",
+        contactConsent: "I agree that my data may be used to respond to my request",
+        contactErrName: "Please enter your name.",
+        contactErrEmail: "Please enter a valid email address.",
+        contactErrSubject: "Please select a subject.",
+        contactErrMessage: "Please enter your message.",
+        contactErrConsent: "You must accept to continue.",
+        footerTagline: "Serving citizens for sustainable local development and a better quality of life.",
+        footerDesignedLine: "Designed with care for citizens",
+        serviceTaxesTitleLong: "Local Taxes and Fees",
+        serviceTaxesLead: "Management of municipal taxes and fees",
+        serviceTaxesInfo: "Information",
+        brandCommune: "Rural Commune",
+        brandSub: "Bni Chegdale"
     }
 };
+
+const DEFAULT_LANG = 'ar';
+const LANG_LABELS = { ar: 'العربية', fr: 'Français', en: 'English' };
+
+function getTranslation(lang, key) {
+    const dict = translations[lang] || translations[DEFAULT_LANG];
+    return dict[key] || translations[DEFAULT_LANG][key] || translations.fr[key] || key;
+}
 
 // Language Manager Class
 class LanguageManager {
     constructor() {
-        this.currentLang = localStorage.getItem('selectedLanguage') || 'fr';
+        const saved = localStorage.getItem('selectedLanguage');
+        this.currentLang = translations[saved] ? saved : DEFAULT_LANG;
         this.init();
     }
     
@@ -520,16 +730,14 @@ class LanguageManager {
     
     setLanguage(lang) {
         if (!translations[lang]) {
-            lang = 'fr'; // Default to French
+            lang = DEFAULT_LANG;
         }
         
         this.currentLang = lang;
         localStorage.setItem('selectedLanguage', lang);
         
-        // Update HTML lang attribute
         document.documentElement.lang = lang;
         
-        // Update dir attribute for RTL (Arabic)
         if (lang === 'ar') {
             document.documentElement.dir = 'rtl';
             document.body.classList.add('rtl');
@@ -538,64 +746,87 @@ class LanguageManager {
             document.body.classList.remove('rtl');
         }
         
-        // Translate all elements with data-translate attribute
         document.querySelectorAll('[data-translate]').forEach(element => {
             const key = element.getAttribute('data-translate');
-            if (translations[lang][key]) {
-                if (element.tagName === 'INPUT' && element.type === 'submit') {
-                    element.value = translations[lang][key];
-                } else if (element.hasAttribute('placeholder')) {
-                    element.placeholder = translations[lang][key];
-                } else {
-                    element.textContent = translations[lang][key];
-                }
+            const text = getTranslation(lang, key);
+            if (!text || text === key) return;
+
+            if (element.tagName === 'INPUT' && (element.type === 'submit' || element.type === 'button')) {
+                element.value = text;
+            } else if (element.tagName === 'OPTION') {
+                element.textContent = text;
+            } else if (element.hasAttribute('data-translate-placeholder') || (element.hasAttribute('placeholder') && element.tagName === 'INPUT')) {
+                element.placeholder = text;
+            } else if (element.tagName === 'LABEL' && element.querySelector('.text-danger')) {
+                const star = element.querySelector('.text-danger').outerHTML;
+                element.innerHTML = text + ' ' + star;
+            } else if (element.classList.contains('alert') && element.querySelector('[data-translate]')) {
+                return;
+            } else {
+                element.textContent = text;
             }
         });
         
-        // Update meta description
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-            // You can add description translations if needed
+        const pageId = document.body.getAttribute('data-page');
+        if (pageId) {
+            const titleKey = 'pageTitle_' + pageId;
+            const titleEl = document.querySelector('title');
+            const pageTitle = getTranslation(lang, titleKey);
+            if (titleEl && pageTitle && pageTitle !== titleKey) {
+                titleEl.textContent = pageTitle;
+            }
         }
         
-        // Update page title
-        const titleElement = document.querySelector('title');
-        if (titleElement && translations[lang].pageTitle) {
-            titleElement.textContent = translations[lang].pageTitle;
+        this.updateLanguageSwitcherUI();
+        document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
+    }
+    
+    updateLanguageSwitcherUI() {
+        const switcher = document.getElementById('languageSwitcher');
+        if (!switcher) return;
+
+        switcher.querySelectorAll('[data-lang]').forEach(item => {
+            item.classList.toggle('active', item.getAttribute('data-lang') === this.currentLang);
+        });
+
+        const langNameSpan = switcher.querySelector('[data-translate="langName"]');
+        if (langNameSpan) {
+            langNameSpan.textContent = LANG_LABELS[this.currentLang];
+        }
+
+        const menu = switcher.querySelector('.dropdown-menu');
+        if (menu) {
+            menu.classList.toggle('dropdown-menu-end', this.currentLang !== 'ar');
+            menu.classList.toggle('dropdown-menu-start', this.currentLang === 'ar');
         }
     }
     
     createLanguageSwitcher() {
-        // Check if switcher already exists
         if (document.getElementById('languageSwitcher')) {
+            this.updateLanguageSwitcherUI();
             return;
         }
         
-        // Find navbar nav
         const navbarNav = document.querySelector('.navbar-nav');
         if (!navbarNav) return;
         
-        // Create language switcher dropdown
         const langSwitcher = document.createElement('li');
         langSwitcher.className = 'nav-item dropdown';
         langSwitcher.id = 'languageSwitcher';
         
-        const currentLangName = this.currentLang === 'fr' ? 'Français' : 
-                               this.currentLang === 'ar' ? 'العربية' : 'English';
-        
         langSwitcher.innerHTML = `
             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-globe me-1"></i><span data-translate="langName">${currentLangName}</span>
+                <i class="bi bi-globe me-1"></i><span data-translate="langName">${LANG_LABELS[this.currentLang]}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
                 <li>
-                    <a class="dropdown-item ${this.currentLang === 'fr' ? 'active' : ''}" href="#" data-lang="fr">
-                        <span class="me-2">🇫🇷</span>Français
+                    <a class="dropdown-item ${this.currentLang === 'ar' ? 'active' : ''}" href="#" data-lang="ar">
+                        <span class="me-2">🇲🇦</span>العربية <small class="text-muted">(رسمي)</small>
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item ${this.currentLang === 'ar' ? 'active' : ''}" href="#" data-lang="ar">
-                        <span class="me-2">🇲🇦</span>العربية
+                    <a class="dropdown-item ${this.currentLang === 'fr' ? 'active' : ''}" href="#" data-lang="fr">
+                        <span class="me-2">🇫🇷</span>Français
                     </a>
                 </li>
                 <li>
@@ -606,32 +837,12 @@ class LanguageManager {
             </ul>
         `;
         
-        // Insert before the last nav item or at the end
         navbarNav.appendChild(langSwitcher);
         
-        // Add event listeners
         langSwitcher.querySelectorAll('[data-lang]').forEach(item => {
             item.addEventListener('click', (e) => {
                 e.preventDefault();
-                const lang = e.currentTarget.getAttribute('data-lang');
-                this.setLanguage(lang);
-                
-                // Update active state
-                langSwitcher.querySelectorAll('.dropdown-item').forEach(li => {
-                    li.classList.remove('active');
-                });
-                e.currentTarget.classList.add('active');
-                
-                // Update dropdown button text
-                const langNames = {
-                    'fr': 'Français',
-                    'ar': 'العربية',
-                    'en': 'English'
-                };
-                const langNameSpan = langSwitcher.querySelector('[data-translate="langName"]');
-                if (langNameSpan) {
-                    langNameSpan.textContent = langNames[lang];
-                }
+                this.setLanguage(e.currentTarget.getAttribute('data-lang'));
             });
         });
     }
@@ -641,9 +852,12 @@ class LanguageManager {
     }
     
     translate(key) {
-        return translations[this.currentLang][key] || key;
+        return getTranslation(this.currentLang, key);
     }
 }
+
+window.getTranslation = getTranslation;
+window.translations = translations;
 
 // Initialize language manager when DOM is ready
 let languageManager;

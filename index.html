@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site officiel de la Commune rurale de Bni Chegdale - Province de Fquih Ben Salah, Région Béni Mellal-Khénifra - Services communaux, informations administratives et actualités">
-    <title>Commune Rurale de Bni Chegdale - Accueil</title>
-    
+    <title>الجماعة القروية بني شكدال - الرئيسية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -13,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="home">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg">
         <div class="container">
@@ -183,10 +185,10 @@
                             <div class="mb-3">
                                 <i class="bi bi-people-fill text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Population</h5>
+                            <h5 class="card-title text-primary mb-3" data-translate="geoPopulation">السكان</h5>
                             <p class="display-6 fw-bold text-primary mb-0">10 413</p>
-                            <p class="text-muted small mb-0">habitants (2014)</p>
-                            <p class="text-muted small">2 355 ménages</p>
+                            <p class="text-muted small mb-0" data-translate="geoInhabitants">نسمة (2014)</p>
+                            <p class="text-muted small"><span>2 355</span> <span data-translate="geoHouseholds">أسرة</span></p>
                         </div>
                     </div>
                 </div>
@@ -196,10 +198,10 @@
                             <div class="mb-3">
                                 <i class="bi bi-geo-alt-fill text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Localisation</h5>
-                            <p class="mb-2"><strong>Altitude moyenne :</strong> 410 m</p>
-                            <p class="mb-2"><strong>Province :</strong> Fquih Ben Salah</p>
-                            <p class="mb-0"><strong>Région :</strong> Béni Mellal-Khénifra</p>
+                            <h5 class="card-title text-primary mb-3" data-translate="geoLocationTitle">الموقع</h5>
+                            <p class="mb-2"><strong data-translate="geoAltitude">الارتفاع المتوسط:</strong> 410 m</p>
+                            <p class="mb-2"><strong data-translate="geoProvince">الإقليم:</strong> Fquih Ben Salah</p>
+                            <p class="mb-0"><strong data-translate="geoRegion">الجهة:</strong> Béni Mellal-Khénifra</p>
                         </div>
                     </div>
                 </div>
@@ -209,7 +211,7 @@
                             <div class="mb-3">
                                 <i class="bi bi-map text-primary fs-1"></i>
                             </div>
-                            <h5 class="card-title text-primary mb-3">Distances</h5>
+                            <h5 class="card-title text-primary mb-3" data-translate="geoDistanceTitle">المسافات</h5>
                             <p class="mb-2"><strong>Casablanca :</strong> ~133 km</p>
                             <p class="mb-2"><strong>Marrakech :</strong> ~133 km</p>
                             <p class="mb-0"><strong>Rabat :</strong> ~176 km</p>
@@ -222,11 +224,11 @@
                     <div class="card border-0 shadow-sm">
                         <div class="card-body p-4">
                             <h5 class="text-primary mb-3">
-                                <i class="bi bi-house-heart me-2"></i>Quartiers et Villages
+                                <i class="bi bi-house-heart me-2"></i><span data-translate="geoNeighborhoods">الأحياء والقرى</span>
                             </h5>
                             <div class="row">
                                 <div class="col-md-6 col-lg-4 mb-2">
-                                    <i class="bi bi-geo-fill text-primary me-2"></i><strong>Khmis Bni Chegdale</strong> <span class="badge bg-primary">Centre administratif</span>
+                                    <i class="bi bi-geo-fill text-primary me-2"></i><strong>Khmis Bni Chegdale</strong> <span class="badge bg-primary" data-translate="geoAdminCenter">المركز الإداري</span>
                                 </div>
                                 <div class="col-md-6 col-lg-4 mb-2">
                                     <i class="bi bi-geo-fill text-primary me-2"></i>Al Khouloute
@@ -255,46 +257,8 @@
                 <h2 class="display-5 fw-bold text-primary mb-3" data-translate="newsTitle">Actualités Récentes</h2>
                 <p class="lead text-muted" data-translate="newsSubtitle">Restez informé des dernières nouvelles de la commune</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm animate-fade-in-up">
-                        <div class="card-body">
-                            <span class="badge bg-danger mb-2" data-translate="newsImportant">Important</span>
-                            <h5 class="card-title" data-translate="newsTitle1">Nouveaux horaires d'ouverture</h5>
-                            <p class="card-text text-muted" data-translate="newsText1">Les horaires de la commune ont été mis à jour pour mieux servir les citoyens.</p>
-                            <a href="actualites.html" class="btn btn-sm btn-primary"><span data-translate="btnReadMore">Lire la suite</span></a>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <small class="text-muted"><i class="bi bi-calendar me-1"></i>15 Janvier 2025</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm animate-fade-in-up">
-                        <div class="card-body">
-                            <span class="badge bg-success mb-2" data-translate="newsProject">Projet</span>
-                            <h5 class="card-title" data-translate="newsTitle2">Projets de développement</h5>
-                            <p class="card-text text-muted" data-translate="newsText2">Découvrez les nouveaux projets de développement local en cours.</p>
-                            <a href="actualites.html" class="btn btn-sm btn-primary"><span data-translate="btnReadMore">Lire la suite</span></a>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <small class="text-muted"><i class="bi bi-calendar me-1"></i>10 Janvier 2025</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm animate-fade-in-up">
-                        <div class="card-body">
-                            <span class="badge bg-info mb-2" data-translate="newsAnnouncement">Annonce</span>
-                            <h5 class="card-title" data-translate="newsTitle3">Réunion du conseil communal</h5>
-                            <p class="card-text text-muted" data-translate="newsText3">Prochaine réunion du conseil communal prévue le mois prochain.</p>
-                            <a href="actualites.html" class="btn btn-sm btn-primary"><span data-translate="btnReadMore">Lire la suite</span></a>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <small class="text-muted"><i class="bi bi-calendar me-1"></i>5 Janvier 2025</small>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-4" id="homePostsContainer">
+                <!-- Publications dynamiques (admin) -->
             </div>
             <div class="text-center mt-5">
                 <a href="actualites.html" class="btn btn-primary btn-lg">
@@ -360,6 +324,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Language Support -->
     <script src="assets/js/language.js"></script>
+    <script src="assets/js/i18n-bindings.js"></script>
+    <script src="assets/js/posts.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
